@@ -1,3 +1,5 @@
 Template.containers.helpers
   containers: ->
-      Containers.find()
+     c = window.Containers.find().fetch()
+     console.log(c)
+     return c
